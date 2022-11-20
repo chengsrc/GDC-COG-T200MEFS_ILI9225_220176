@@ -1,27 +1,29 @@
 ## 1. Hardware
-Adapted to  GDC-COG-T200MEFS and QCG22QVGA916
+Adapted to  GDC-COG-T200MEFS and QCG22QVGA916.
 ### 1.1 Difference
-(1) For GDC-COG-T200MEFS:
-stm32f103c6
-PB0-7  <-> DB0-7
-Configure in ili9225.h: 
-#define TRANSPORT_DATA_8BIT 1
-#define TRANSPORT_DATA_16BIT 0
+(1) For GDC-COG-T200MEFS:  
+stm32f103c6  
+PB0-7  <-> DB0-7  
+Configure in ili9225.h:  
+#define TRANSPORT_DATA_8BIT 1  
+#define TRANSPORT_DATA_16BIT 0  
 
-(2) For QCG22QVGA916
-stm32f103rc
-PB0-15  <-> DB0-15
+(2) For QCG22QVGA916  
+stm32f103rc  
+PB0-15  <-> DB0-15  
 
-Change IC from stm32f103c6 to stm32f103rc in project (not required).
-Configure in ili9225.h: 
-#define TRANSPORT_DATA_8BIT 0
+Change IC from stm32f103c6 to stm32f103rc in project (not required).  
+Configure in ili9225.h:  
+#define TRANSPORT_DATA_8BIT 0  
 #define TRANSPORT_DATA_16BIT 1
 ### 1.2 Common:
-PA0  CS
-PA1  DC/RS
-PA2  RD
-PA3  WR
-PA4  RST
+PIN|DEFINITION
+|--|--|
+PA0 | CS|
+PA1 | DC/RS|
+PA2 | RD|
+PA3 | WR|
+PA4 | RST|
 LED：2.8V-3.0V (recommend)
 
 ## 2. Software
