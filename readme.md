@@ -24,6 +24,8 @@ PA1 | DC/RS|
 PA2 | RD|
 PA3 | WR|
 PA4 | RST|
+
+
 LED：2.8V-3.0V (recommend)
 
 ## 2. Software
